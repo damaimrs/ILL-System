@@ -68,6 +68,32 @@
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
+
+			  <div class="modal fade" id="detil-buku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Detil Buku</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<p><strong>Kode  : BR012331233</strong> </p>
+			      	<p><strong>Judul : Essentials of Discrete Mathematics</strong> </p>
+			      	<p><strong>Versi : 2nd edition </strong> </p>
+			      	<p><strong>Jenis : Text Book</strong></p>
+			        <p><strong>Nama Pengarang : David J. Hunter</strong> </p>
+			        <p><strong>Deskripsi singkat : - </strong> </p>
+			        <p><strong>Tersedia di : RBTC </strong> </p>
+			        <p><strong>Lama Peminjaman : 3 hari </strong> </p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			  </div>
 			<div class="modal fade" id="detil-peminjaman-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
@@ -190,7 +216,7 @@
 		                  </thead>
 		                  <tbody style="text-align:center;">
 		                         <tr>
-		                         	<td>Matematika Diskrit</td>
+		                         	<td><a data-toggle="modal" data-target="#detil-buku">Matematika Diskrit</a></td>
 		                         	<td>Bupena</td>
 		                         	<td>RBTI</td>
 		                         	<td>-</td>
@@ -204,7 +230,7 @@
 		                         	</td>
 		                         </tr>
 								 <tr>
-		                         	<td>Kalkulus 2</td>
+		                         	<td><a data-toggle="modal" data-target="#detil-buku">Kalkulus 2</a></td>
 		                         	<td>ITS</td>
 		                         	<td>RB Matematika</td>
 		                         	<td>29/04/2018</td>
@@ -218,7 +244,7 @@
 		                         	</td>
 		                         </tr>
 								 <tr>
-		                         	<td>Fisdas 1</td>
+		                         	<td><a data-toggle="modal" data-target="#detil-buku">Fisdas 1</a></td>
 		                         	<td>ITS</td>
 		                         	<td>RB Fisika</td>
 		                         	<td>29/04/2018</td>
