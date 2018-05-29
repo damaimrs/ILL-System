@@ -1,0 +1,358 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Inter-Library Loan</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/table.css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="pustakawan-main-page.html">Home</a></li>
+						  <li><a href="pustakawan-request-ketersediaan-masuk.html">Request Ketersediaan</a></li>
+						  <li><a href="pustakawan-request-masuk.html">Request Peminjaman</a></li>
+				          <li><a href="pustakawan-request-perpanjangan.html">Request Perpanjangan</a></li>
+				          <li><a href="pustakawan-peminjam-masuk.html">Daftar Peminjamanan</a></li>
+				          <li class="menu-has-children"><a href="">Akun</a>
+							<ul>
+								<li><a href="pustakawan-profil.html">Profil</a></li>
+								<li><a href="pustakawan-mengelola-buku.html">Kelola Buku</a></li>
+								<li><a href="pustakawan-kelola-akun-mhs.html">Registrasi Akun</a></li>
+								<li><a href="login.html">Logout</a></li>
+							</ul>
+						  </li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<div class="modal fade" id="detil-buku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Detil Buku</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<p><strong>Judul : Essentials of Discrete Mathematics</strong> </p>
+			      	<p><strong>Versi : 2nd edition </strong> </p>
+			        <p><strong>Nama Pengarang : David J. Hunter</strong> </p>
+			        <p><strong>Deskripsi singkat : - </strong> </p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="tambah-buku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Detil Buku</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<form>
+			      		  <div class="form-group">
+				             <label for="exampleInputFile">Upload Foto </label>
+				                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+				                <small id="fileHelp" class="form-text text-muted">Pilih Foto Buku..</small>
+				            </div>
+				           <div class="form-group">
+						    <label for="exampleInputEmail1">Kode Buku </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode buku..">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Judul Buku </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Judul buku..">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Pengarang </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama pengarang..">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Edisi </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Edisi...">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Penerbit </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Penerbit..">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Jenis Buku </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Penerbit..">
+						  </div>
+						  <div class="custom-control custom-checkbox">
+						    <input type="checkbox" class="custom-control-input" id="customCheck1">
+						    <label class="custom-control-label" for="customCheck1">Centang jika buku dapat dipinjam</label>
+						  </div>
+						  <br>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Deskripsi Singkat </label>
+						    <textarea class="form-control" rows="5" id="comment"></textarea>
+						  </div>
+						</form>
+			      </div>
+			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">Tambah</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="delete-post-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			    <div class="modal-dialog" role="document">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+			          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			            <span aria-hidden="true">&times;</span>
+			          </button>
+			        </div>
+			        <div class="modal-body">
+			          <p>Anda ingin menghapus buku ini?</p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+			          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deletePost1()">Ya</button>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+			<div class="modal fade" id="ubah-buku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Detil Buku</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<form>
+			      		  <div class="form-group">
+				             <label for="exampleInputFile">Upload Foto </label>
+				                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+				                <small id="fileHelp" class="form-text text-muted">Pilih Foto Buku..</small>
+				            </div>
+				            <div class="form-group">
+						    <label for="exampleInputEmail1">Kode Buku </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode buku.." value="ABC12442">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Judul Buku </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Judul buku.." value="Essentials of Discrete Mathematics">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Pengarang </label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama pengarang.." value="David J. Hunter">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Edisi </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Edisi..." value="2nd">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Penerbit </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Penerbit.." value=" ">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Jenis Buku </label>
+						    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Penerbit.." value="Text Book">
+						  </div>
+						  <div class="custom-control custom-checkbox">
+						    <input type="checkbox" class="custom-control-input" id="customCheck2">
+						    <label class="custom-control-label" for="customCheck2">Centang jika buku dapat dipinjam</label>
+						  </div>
+						  <br>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Deskripsi Singkat </label>
+						    <textarea class="form-control" rows="5" id="comment" value-=" "></textarea>
+						  </div>
+						</form>
+			      </div>
+			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">Tambah</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<section class="we-offer-area section-gap" id="offer">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">Daftar Buku</h1>
+								<br>
+								<br>
+								<div class="row">
+									<div class="col-md-6">
+									<div id="custom-search-input" style="width: 63%; float: right;">
+						                <div class="input-group col-md-12">
+						                    <input type="text" class="form-control input-lg" placeholder="cari buku.." />
+						                    <!-- span class="input-group-btn">
+						                        <button class="btn btn-info btn-lg" type="button">
+						                            <i class="glyphicon glyphicon-search"></i>
+						                        </button>
+						                    </span> -->
+						                </div>
+						            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="dropdown" style="float: left;">
+										<button class="btn btn-info" style="width:250px;" data-toggle="modal" data-target="#tambah-buku">Tambah Buku</button>										
+									</div>
+								</div>
+								</div>
+								<!-- <p>Who are in extremely love with eco friendly system.</p> -->
+
+					            <br>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3" style="margin: 40px;">
+		            		<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="img/matdis.jpg" alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">Essentials of Discrete Mathematics</h5>
+							    <p class="card-text">2nd edition <br>By: David J. Hunter <br>RBTC</p>
+							    <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#detil-buku">
+							    	Detil Buku
+							    </button>
+							    <button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-1">
+								  <span>&times;</span>
+								</button>
+							    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ubah-buku">
+							    	Ubah
+							    </button>	    
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-3" style="margin: 40px;">
+		            		<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="img/matdis.jpg" alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">Essentials of Discrete Mathematics</h5>
+							    <p class="card-text">2nd edition <br>By: David J. Hunter <br>RBTC</p>
+							    <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#detil-buku">
+							    	Detil Buku
+							    </button>
+							    <button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-1">
+								  <span>&times;</span>
+								</button>
+							    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ubah-buku">
+							    	Ubah
+							    </button>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-3" style="margin: 40px;">
+		            		<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="img/matdis.jpg" alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">Essentials of Discrete Mathematics</h5>
+							    <p class="card-text">2nd edition <br>By: David J. Hunter <br>RBTC</p>
+							    <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#detil-buku">
+							    	Detil Buku
+							    </button>
+							    <button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-1">
+								  <span>&times;</span>
+								</button>
+							    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ubah-buku">
+							    	Ubah
+							    </button>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-3" style="margin: 40px;">
+		            		<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="img/matdis.jpg" alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">Essentials of Discrete Mathematics</h5>
+							    <p class="card-text">2nd edition <br>By: David J. Hunter <br>RBTC</p>
+							    <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#detil-buku">
+							    	Detil Buku
+							    </button>
+							    <button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-1">
+								  <span>&times;</span>
+								</button>
+							    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ubah-buku">
+							    	Ubah
+							    </button>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+
+			</section>
+			<!-- End banner Area -->
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+		
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/parallax.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

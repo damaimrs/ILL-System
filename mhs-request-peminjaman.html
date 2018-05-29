@@ -1,0 +1,197 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Inter-Library Loan</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/table.css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="mhs-main-page.html">Home</a></li>		          
+				          <li><a href="mhs-pinjam-buku.html">Pinjam Buku</a></li>
+				          <li class="menu-has-children"><a href="#">Peminjaman Saya</a>
+				            <ul>
+				              <li><a href="mhs-request-peminjaman.html">Request Peminjaman</a></li>
+				              <li><a href="mhs-peminjaman-saya.html">Sedang Dipinjam</a></li>
+				              <li><a href="mhs-riwayat-peminjaman-saya.html">Riwayat Peminjaman</a></li>
+				            </ul>
+				          </li>
+				          <li class="menu-has-children"><a href="">Akun</a>
+							<ul>
+								<li><a href="mhs-profil.html">Profil</a></li>
+								<li><a href="login.html">Logout</a></li>
+							</ul>
+						  </li>	
+				<!--           <li><a href="#project">Project</a></li>
+				          <li><a href="#price">Price</a></li> -->
+<!-- 				          <li><a href="#blog">Blog</a></li> -->
+<!-- 				          <li class="menu-has-children"><a href="">Pages</a>
+				            <ul>
+				              <li><a href="generic.html">Generic</a></li>
+				              <li><a href="elements.html">Elements</a></li>
+				            </ul>
+				          </li> -->
+				        </ul>
+				      </nav><!-- #nav-menu-container -->
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+			<section class="we-offer-area section-gap" id="offer">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">Request Peminjaman</h1>
+								<br>
+								<div class="row">
+									<div class="col-md-6">
+									<div id="custom-search-input" style="width: 63%; float: right;">
+						                <div class="input-group col-md-12">
+						                    <input type="text" class="form-control input-lg" placeholder="cari buku.." /><!-- 
+						                    <span class="input-group-btn">
+						                        <button class="btn btn-info btn-lg" type="button">
+						                            <i class="glyphicon glyphicon-search"></i>
+						                        </button>
+						                    </span> -->
+						                </div>
+						            </div>
+								</div>
+								<br>
+								<div class="col-md-6">
+									<div class="dropdown" style="float: left;">
+										<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Filter Buku Berdasarkan RB..
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										    <a class="dropdown-item" href="#">RBTC</a>
+										    <a class="dropdown-item" href="#">RBSI</a>
+										    <a class="dropdown-item" href="#">RBTI</a>
+										</div>
+									</div>
+								</div>
+								</div>
+
+								<!-- <p>Who are in extremely love with eco friendly system.</p> -->
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+		            <div class="panel panel-default panel-table">
+		              <div class="panel-heading">
+
+		              </div>
+		              <div class="panel-body">
+		                <table class="table table-striped table-bordered table-list">
+		                  <thead>
+		                    <tr style="text-align: center;">
+		                        <th style="width:300px;">Judul Buku</th>
+		                        <th style="width:200px;">Penerbit</th>
+		                        <th>Ruang Baca</th>
+		                        <th>Status</th>
+		                        <th>Aksi</th>
+		                    </tr>
+		                  </thead>
+		                  <tbody style="text-align:center;">
+								 <tr id="peminjaman-1">
+		                         	<td>Pantun Melayu</td>
+		                         	<td>Airlangga</td>
+		                         	<td>RB Pusat</td>
+		                         	<td>Menunggu..</td>
+		                         	<td>
+		                         		<button id="pinjam-1" type="button" class="btn btn-info btn-sm" onclick="likeFunction(this)" disabled>Pinjam</button>
+		                         	</td>
+		                         </tr>
+								 <tr id="peminjaman-2">
+		                         	<td>Kalkulus 1</td>
+		                         	<td>ITS</td>
+		                         	<td>RB Matematika</td>
+		                         	<td>Tersedia</td>
+		                         	<td>
+		                         		<form action="mhs-peminjaman-saya.html">		
+		                         		<button id="pinjam-2" type="submit" class="btn btn-info btn-sm" href="mhs-peminjaman-saya.html">Pinjam</button>
+		                         		</form>
+		                         	</td>
+		                         </tr>
+		                   </tbody>
+		                </table>
+
+		              </div>
+		              <div class="panel-footer">
+
+		              </div>
+		            </div>
+				</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+
+			</section>
+			<!-- End banner Area -->
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+	
+			</footer>
+			<!-- End footer Area -->
+
+			<script type="text/javascript">
+				
+				function request2(){
+					document.getElementById('peminjaman-2').style.display = 'none';
+				}
+			</script>
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/parallax.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>
